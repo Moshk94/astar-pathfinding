@@ -9,7 +9,7 @@ ___
 #### Output
 An array with co-ordinates to the end path. Each co-ordinate is an object with the **f**,**g** and **h** score, **x** and **y** co-ordinates, **id** and **parent id**
 ___
-**Minfied size - 1.73kb** | **Full size - 5.91kb**
+**Minfied size - 1.68kb** | **Full size - 6.12kb**
 
 ___
 References: [https://www.raywenderlich.com/3016-introduction-to-a-pathfinding](https://www.raywenderlich.com/3016-introduction-to-a-pathfinding)
