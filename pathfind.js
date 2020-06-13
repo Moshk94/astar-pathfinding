@@ -1,6 +1,8 @@
 "use strict"
 function pathFind(worldMap, startPoint, endPoint){
     const clone = (items) => items.map(item => Array.isArray(item) ? clone(item) : item);
+    const randomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+
     var finalList = [];
     var openList = [];
     var closedList = [];
@@ -168,8 +170,6 @@ function pathFind(worldMap, startPoint, endPoint){
     function g(nodeY, nodeX){
         return (Math.abs(startPoint[0]-nodeY)+Math.abs(startPoint[1]-nodeX));
     };
-
-    function randomInt(max){return Math.floor(Math.random() * Math.floor(max))};
-    
+        
     return finalList;
 };
