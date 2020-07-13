@@ -1,10 +1,10 @@
 "use strict"
 /**
  * [0,0] is on the top left of the clonedworld. For the start and end array first value is the Y co-rodinates and the second value is the X co-ordinates;
- * @param {array} clonedworld Nested clonedworld array - 0 Indicates valid tiles. 
- * @param {array} start 2x1 array of Co-ordinates.
- * @param {array} end 2x1 array of Co-ordinates.
- * @return {array} Nested Array with co-ordinates to the end path
+ * @param {array} world Nested Array - 0 Indicates valid tiles. 
+ * @param {array} start 2x1 Array of Co-ordinates.
+ * @param {array} end 2x1 Array of Co-ordinates.
+ * @return {array} Nested array with co-ordinates to the end path
  */
 function pathFind(world, start, end){
     const clone = (items) => items.map(item => Array.isArray(item) ? clone(item) : item);
